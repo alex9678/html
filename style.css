@@ -1,145 +1,161 @@
 img {
-    border: 1px solid #9ff106;
-    border-radius: 4px;
-    padding: 5px;
-    width: 750px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    border-radius: 10%;
+  }
+
+  img {
+    transition: filter 0.3s ease;
   }
   
   img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    filter: grayscale(100%);
   }
 
-
-  body {
-    background-color:rgb(20, 19, 19);
-    background-image: url("https://i.gifer.com/2iiH.gif")
-  }
-
-  h1 { color: #81f323; font-family: 'Rouge Script', cursive; font-size: 50px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34; }
-
-
-h2 { color: #b1f702; font-family: 'Julius Sans One', sans-serif; font-size: 22px; font-weight: bold; line-height: 32px; margin: 0 0 24px; text-shadow: 1px 1px 1px #082b34; }
-
-
-p { color: #8aec08; font-family: 'Carme', sans-serif; font-size: 16px; line-height: 24px; margin: 0 0 24px; }
-
-
-a { color: #5fee0c; text-decoration: underline; }
-
-
-a:hover { color: #54e202; text-decoration: underline; }
-
-  div.container {
-    text-align: center;
+  
+  img {
+    transition: transform 0.3s ease;
   }
   
-  ul.myUL {
-    display: inline-block;
-    text-align: left;
+  img:hover {
+    transform: scale(1.2);
+  }
+   
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  body {
+    background-color: rgb(29, 28, 28);
+  }
+
+  h1 { color: #dfddd8; font-family: 'Droid serif', serif; font-size: 36px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center; }
+
+
+p { color: #eee; font-family: 'Droid Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 14px; }
+
+
+a { color: #ebe8e1; text-decoration: none; border-bottom: 1px solid #4c3a07; }
+
+
+a:hover { color: #fff; background: #eae8e2; }
+
+
+.date { border-top: 1px solid #fff; position: relative; top: 20px; margin-bottom: 30px; }
+
+
+.date span { color: #000; text-decoration: none; font-style: italic; font-size: 13px; text-align: center; padding: 2px 5px; background: #fff; width: 120px; margin: 0 auto; display: block; position: relative; top: -10px; font-family: "Droid serif", serif; }
+
+
+a.btn { font-family: 'Droid serif', serif; background: #383736; padding: 4px 7px; color: #000; text-decoration: none; margin: 0 auto; width: 100%; width: 120px; margin: 0 auto; display: block; text-align: center; font-style: italic; }
+
+
+a.btn:hover { color: #000; background: #fff; }
+
+
+.left { float: left; margin: 0 5% 30px 0; width: 30%; }
+
+
+.right { float: right; margin: 0 0 30px 0; width: 30%; }
+
+
+
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #dbd5d5;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(8, 8, 8, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.textstyle {
+    background-color: rgb(10, 10, 10); /* Changing background color */
+    font-weight: bold; /* Making font bold */
+    border-radius: 20px; /* Making border radius */
+    width: auto; /* Making auto-sizable width */
+    height: auto; /* Making auto-sizable height */
+    padding: 5px 30px 5px 30px; /* Making space around letters */
+    font-size: 18px; /* Changing font size */
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #444242; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #000000;
+    color: rgb(231, 222, 222);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #131212;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #d6d3d3;
+    padding: 20px;
   }
 
 
   hr {
     border: none;
     height: 0px;
-    box-shadow: 0 1px 4px 1px cornflowerblue;
-  }
-  
-  input[type=text] {
-    border: 2px solid red;
-    border-radius: 4px;
+    box-shadow: 0 1px 4px 1px rgb(12, 12, 12);
   }
 
-  input[type=text] {
-    background-color: #7f14c7;
-    color: rgb(231, 22, 22);
-  }
 
-  textarea {
-    width: 20%;
-    height: 100px;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    border: 2px solid #ce0722;
-    border-radius: 4px;
-    background-color: #6011df;
-    resize: none;
-  }
-
-  li {
-    display: inline;
-  }
-
-  ul {
-    border: 1px solid #555;
-  }
-  
-  li {
-    text-align: center;
-    border-bottom: 1px solid #555;
-  }
-  
-  li:last-child {
-    border-bottom: none;
-  }
-
-  li {
-    border-right: 1px solid #bbb;
-  }
-  
-  li:last-child {
-    border-right: none;
-  }
-
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-img
-{
-  width:300px;
-  height:200px;
-}
-div.img img
-{
- width: 100%;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: red;
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: red;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: red;
-}
-
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: #9704aa;
-  border: none;
-  color: rgb(240, 10, 10);
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-button{
-  padding: 12px 30px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 2px 1px rgba(144, 4, 199, 0.363) ;
-  border: 1px solid rgb(236, 4, 4);
-  font-size: 15px;
- }
-
- button:hover{
-  background-color: rgb(142, 14, 146);
-  color: rgb(199, 29, 86);
- }
   
